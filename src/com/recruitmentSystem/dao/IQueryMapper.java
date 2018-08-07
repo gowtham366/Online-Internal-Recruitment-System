@@ -2,7 +2,7 @@ package com.recruitmentSystem.dao;
 
 public interface IQueryMapper {
 	
-	//gowtham team //AUTHENTICATION
+	//gowtham //AUTHENTICATION
 	public static final String QUERY_AUTH_USER ="SELECT user_id,role,last_login FROM tbl_user_master WHERE user_id = ? AND password = ?";
 	public static final String QUERY_UPDATE_LAST_LOGIN = "UPDATE tbl_user_master SET last_login = SYSDATE WHERE user_id = ?";
 	public static final String QUERY_SEARCH_EMPLOYEE = "SELECT employee_id,employee_name,skill,domain,experience_yrs,project_id,req_id FROM tbl_employee_master WHERE domain = ? AND skill = ? ";
